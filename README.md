@@ -14,7 +14,7 @@
 ## Cloning the Repository
 
 ```bash
-git clone [<repository-url>](https://github.com/rahil0707/Fetch-Backend.git)
+git clone https://github.com/rahil0707/Fetch-Backend.git
 ```
 
 ## Setup

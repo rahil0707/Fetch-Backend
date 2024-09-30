@@ -1,0 +1,40 @@
+Part 2:
+
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+- For this backend coding exercise, I choose Python and Django due to its familiarity for me and its simplicity, scalability and the incredible support Django has for implementing and building REST APIs.
+- Writing code in Python is easy and efficient so I can just focus on the logic instead of the syntax.
+- DRF (Django's REST Framework) makes creating and managing RESTful APIs straightforward, with built in tools for serialization, request validation, and routing which reduces the amount of boilerplate code.
+- Also, Django's ORM makes database interaction easy so that its easier to work with the Transactoin model I have used in this implementation.
+- I have used multiple tools and libraries like Response, parse_datetime, Sum, APIView, and status to help me in writing the functionality.
+
+2. What are the advantages and disadvantages of your solution?
+
+Advantages:
+- Modularity: Django REST Framework allows the API to be modular and extendable, making it easy to add more endpoints for different functionality or expand functionality in the future. While implementing the code, I used this feature to implement a reset endpoint to reset my balance for debugging.
+- Ease of Use: Python and Django are both readable and have robust documentation, which makes the development process easier and faster.
+- Efficiency: The solution adheres to the REST principles and ensures proper validation, edge case checking, serialization, and error handling, leading to a clean and effective codebase.
+
+Disadvantages:
+
+- Overhead: Eventhough Django is incredibly powerful, it could introduce unnecessary overhead for smaller projects or lightweight APIs like in our case. A framework like Flask could have been faster, but at the cost of some of Django's helpful built-in capabilities.
+- Limited Scalability with SQLite: Eventhough SQLite sufficient for this exercise, it's use may not scale well for larger datasets like the ones used at Fetch or concurrent requests in a production environment. A more robust database like PostgreSQL would be better suited for that scenario.
+
+3. What has been a favorite school/personal project thus far? What about it challenged you?
+
+- One of my favorite projects so far has been the Breezy (IoT Smart Fan Kit) project I built with a team of 4 other engineers in the Senior year of my Undergrad for the Senior Design Capstone.
+- The objective of this project was to build a Fan Automation Kit that detects environmental conditions and changes the fan speed based on the findings, while incorporating remote control capabilities.
+- This product is industry-first as it can be integrated with any existing home fan, offering customers ease of use and flexibility via remote control, distinguishing it from traditional fans. 
+- The kit includes temperature, humidity, and occupancy sensors that continuously gather data about the room’s conditions. A microcontroller (MCU) utilizes the sensor data to make real-time decisions regarding the fan’s speed and operation. 
+- The smart fan kit is equipped with Internet of Things (IoT) capabilities, enabling it to connect to a home Wi-Fi network to enable users to control the fan remotely using a dedicated iOS app.
+- I was in charge of the iOS mobile app. On the mobile app, there is an ‘eco mode’ option that optimizes energy consumption by automatically adjusting fan speeds based on instantaneous temperature and humidity readings, along with automatic shut-off in zero room occupancy conditions.
+- This project was challenging because it was a very large scale project and we worked on it for a whole year, spanning 2 semesters. The first semester included the design concept ideation, gathering customer requirements, planning and designing the approach and technical specifications. We also had to build a tentative timeline and schedule for the whole year.
+- The second semester was all about building the project, like building and testing the hardware and getting it to work. And for me it was to finish up with the whole SDLC lifecycle and actually build the entire iOS mobile app by myself.
+- We had to make it perfect to present at the design expo at the end of the year and just integrating all the components together was one of the most difficult parts. We had to essentially establish how the app would communicate with the fan/kit to give it commands and demonstrate the different functionality.
+- The components were developed very modularly and so building it all and bringing it together was challenging.
+- For the app, I was tasked with building the entire app by myself and that was the first time I was building an app in Swift, so I had to first learn Swiff, but that process pushed me to become more familiar with debugging complex issues and thinking creatively about solutions.
+- I developed an iOS application using Swift and SwiftUI that sends and receives HTTP requests to an ESP web server over Wi-Fi to control the kit – users can regulate heat index and perform automatic motor speed adjustments.
+- I established user authentication utilizing the Google Firebase database for secure login and registration and added corresponding UI pages to the iOS app for user login, registration, and a profile view page when logged in.
+- For the app communication with the web server, I utilized Wireshark to help establish a connection between the web server and the app and tested web server and app performance using Wireshark to observe correct transmission of HTTP requests to the app.
+- It was challenging to develop all the models and UI pages simultaneously to make the app work and establish a successful connection to the web server to control the fan kit with tight deadlines as the project's complexity was faily difficult and I was also working on some of the Firmware as well as the hardware.
+- Overall the project was a huge success and we had a great presentation at the expo. The judges really liked it and we secured an A for the project.

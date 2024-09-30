@@ -40,6 +40,7 @@ git clone https://github.com/rahil0707/Fetch-Backend.git
 ## Endpoints
 
 1. Add Points (POST): `/add`
+   
 Request Body:
 ```json
 {
@@ -50,6 +51,7 @@ Request Body:
 ```
 
 2. Spend Points (POST): `/spend`
+   
 Request Body:
 ```json
 {
@@ -67,6 +69,7 @@ Response:
 ```
 
 3. Get Balance (GET): `/balance`
+   
 Response:
 ```json
 {

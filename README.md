@@ -33,7 +33,7 @@ git clone https://github.com/rahil0707/Fetch-Backend.git
    ```
 4. Run the server:
    ```bash
-   python manage.py runserver 8000
+   python3 manage.py runserver 8000
    ```
 
 
